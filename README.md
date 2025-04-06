@@ -2,14 +2,14 @@
 
 ## Overview
 
-This project involves the design of a control system for a "Duck car" that stops at a predetermined distance from an obstacle using an infrared sensor. The system uses a PD (Proportional-Derivative) controller to minimize oscillations and ensure smooth stopping behavior. The compensator was modeled and simulated in MATLAB to optimize performance before implementation in hardware.
+This project involves designing a "Duck car" control system that stops at a predetermined distance from an obstacle using an infrared sensor. The system uses a PD (Proportional-Derivative) controller to minimize oscillations and ensure smooth stopping behavior. The compensator was modeled and simulated in MATLAB to optimize performance before implementation in hardware.
 
 ## Features
 
 - **Obstacle Detection**: Infrared sensor measures the distance to obstacles.
 - **Distance Control**: The Duck car stops at a specified distance with minimal oscillation.
 - **PD Controller**: A Proportional-Derivative controller ensures smooth stopping with minimal overshoot.
-- **System Modeling**: The sensor and motor systems were characterized and modeled for the design of the controller.
+- **System Modeling**: The sensor and motor systems were characterized before designing the controller.
 
 ## System Components
 
@@ -18,7 +18,7 @@ The infrared sensor detects obstacles and converts the distance to a voltage sig
 
 ### 2. Motor (Plant)
 The motor is responsible for driving the Duck car. Its open-loop velocity response was used to model the motor as a first-order system with the transfer function:
-![](/Users/jonathansumaili/Downloads/tranferfxn_image.png)
+![Motor TF](/Users/jonathansumaili/Downloads/tranferfxn_image.png)
 
 ### 3. PD Controller
 A PD controller was designed to address performance issues such as overshoot and slow response. The controller was tuned to meet the following design specifications:
