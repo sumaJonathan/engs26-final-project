@@ -18,6 +18,7 @@ The infrared sensor detects obstacles and converts the distance to a voltage sig
 
 ### 2. Motor (Plant)
 The motor is responsible for driving the Duck car. Its open-loop velocity response was used to model the motor as a first-order system with the transfer function:
+
 ![Motor TF](https://github.com/sumaJonathan/engs26-final-project/blob/main/transferfxn_image.png)
 
 ### 3. PD Controller
