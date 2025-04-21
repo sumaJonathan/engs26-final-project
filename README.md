@@ -1,4 +1,4 @@
-# Duck Car Control System
+# Duck Car Controller Design
 
 ## Overview
 
